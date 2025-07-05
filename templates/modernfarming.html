@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/modernfarming.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="modernfarm">
+  <div class="farming-wrapper">
+    <!-- Aeroponic Method -->
+    <div class="farming-section">
+      <img src="{{ url_for('static', filename='images/Aeroponic-System-scaled.jpg') }}" alt="Aeroponic Farming">
+      <h2 class="title">Aeroponic Method of Farming</h2>
+      <p>
+        Aeroponics is the process of growing plants in an air or mist environment without using soil.
+        It works by suspending plant roots in the air and misting them with nutrient water.
+      </p>
+      <ul>
+        <strong>Advantages:</strong>
+        <p><strong style="color:rgb(112, 117, 121)">
+          <li>Ease of working with plants</li>
+          <li>Cost effective as you won't need irrigation channels</li>
+          <li>Disease-free cultivation due to minimal plant-to-plant contact</li>
+        </strong></p>
+      </ul>
+    </div>
+
+    <!-- Hydroponic Method -->
+    <div class="farming-section">
+      <img src="{{ url_for('static', filename='images/Hydroponic-farming.png') }}" alt="Hydroponic Farming">
+      <h2 class="title">Hydroponic Method of Farming</h2>
+      <p>
+        Hydroponics is a soil-less farming method that uses water as the growing medium enriched with nutrients.
+        It allows better plant growth, saves space and increases control.
+      </p>
+      <ul>
+        <strong>Advantages:</strong>
+        <p><strong style="color:rgb(112, 117, 121)">
+          <li>Reduces competition for nutrients, sunlight, and space</li>
+          <li>Helps control weed and pests</li>
+          <li>Reduces machinery cost</li>
+          <li>Maximizes profits from high-value crops</li>
+        </strong></p>
+      </ul>
+    </div>
+
+    <!-- Hybrid Seed Technology -->
+    <div class="farming-section">
+      <img src="{{ url_for('static', filename='images/hybrid-rice-production-a.png') }}" alt="Hybrid Seeds">
+      <h2 class="title">Hybrid Seed Technology</h2>
+      <p>
+        Hybrid seeds are formed by crossing two unrelated inbred plants to gain desired traits.
+        They are commonly used in commercial farming to increase yield and resilience.
+      </p>
+      <ul>
+        <strong>Advantages:</strong>
+        <p><strong style="color:rgb(112, 117, 121)">
+          <li>Vigorous and uniform growth</li>
+          <li>Improved disease resistance</li>
+          <li>Higher yields</li>
+          <li>Better taste and shelf life</li>
+        </strong></p>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

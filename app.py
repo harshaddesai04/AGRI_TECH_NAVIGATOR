@@ -162,6 +162,17 @@ def fertilizer_recommendation():
 
 # render disease prediction input page
 
+@app.route('/yojnas')
+def yojnas():
+    return render_template('yojnas.html', title='Yojnas')
+
+@app.route('/modern-farming')
+def modern_farming():
+    return render_template('modernfarming.html', title='Modern Farming Techniques')
+
+@app.route('/market-place')
+def market_place():
+    return render_template('marketplace.html', title='Market Place')
 
 
 

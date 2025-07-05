@@ -1,41 +1,74 @@
-{% extends 'layout.html' %} {% block body %}
-
+{% extends 'layout.html' %}
+{% block body %}
 
 <style>
-  html body {
-    background-color: rgb(206, 206, 228);
+  body {
+    background-color: #e8f5e9;
+  }
+
+  .disease-form-container {
+    max-width: 500px;
+    margin: 3rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+  }
+
+  .disease-form-container h2.title {
+    text-align: center;
+    color: #2e7d32;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .disease-form-container input[type="file"] {
+    background-color: #f1f8e9;
+    color: black;
+    border: 1px solid #c8e6c9;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .disease-form-container button {
+    background-color: #66bb6a;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+  }
+
+  .disease-form-container button:hover {
+    background-color: #388e3c;
+    color: white;
+  }
+
+  #output-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    display: block;
+    border-radius: 8px;
   }
 </style>
-<br /><br />
-  <h2 style="text-align: center; margin: 0px; color: black">
-    <b>Find out which disease has been caught by your plant</b>
-  </h2>
-  <br />
-  <br>
 
-<div style="
-    width: 350px;
-    height: 50rem;
-    margin: 0px auto;
-    color: black;
-    border-radius: 25px;
-    padding: 10px 10px;
-    font-weight: bold;
-  ">
+<div class="disease-form-container">
+  <h2 class="title">Find out which disease has been caught by your plant</h2>
 
-  
-
-
-  <form class="form-signin" method=post enctype=multipart/form-data>
-
-    <h2 class="h4 mb-3 font-weight-normal"><b>Please Upload The Image</b></h2>
-    <input type="file" name="file" class="form-control-file" id="inputfile" onchange="preview_image(event)" style="font-weight: bold;">
-    <br>
-    <br>
+  <form method="POST" enctype="multipart/form-data" class="form-signin">
+    <h5 class="mb-3" style="color: #2e7d32;"><b>Please Upload The Image</b></h5>
+    
+    <input type="file" name="file" class="form-control-file" id="inputfile" onchange="preview_image(event)" required>
+    
     <img id="output-image" class="rounded mx-auto d-block" />
-    <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-weight: bold;">Predict</button>
-
-
+    
+    <button type="submit">Predict</button>
   </form>
 </div>
 
@@ -43,12 +76,11 @@
   function preview_image(event) {
     var reader = new FileReader();
     reader.onload = function () {
-      var output = document.getElementById('output-image')
+      var output = document.getElementById('output-image');
       output.src = reader.result;
     }
     reader.readAsDataURL(event.target.files[0]);
   }
 </script>
 
-</div>
 {% endblock %}

@@ -1,6 +1,23 @@
 {% extends 'layout.html' %}
 
 {% block body %}
+
+<style>
+		/* Hover transform for service images */
+	.blog-left img,
+	.blog-middle img,
+	.blog-right img {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 10px;
+	}
+
+	.blog-left:hover img,
+	.blog-middle:hover img,
+	.blog-right:hover img {
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+	}
+</style>
 <!-- banner -->
 <section class="banner_w3lspvt" id="home">
 	<div class="csslider infinity" id="slider1">

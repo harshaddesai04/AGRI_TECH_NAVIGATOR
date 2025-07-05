@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/marketplace.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="market-container">
+  <h1 class="market-title">Market Place</h1>
+
+  <div class="market-item">
+    <img src="{{ url_for('static', filename='images/durapump.png') }}" alt="Dura Pump">
+    <div class="market-name">Dura-king Three Phase Water Supply</div>
+    <div class="market-price"><strong>Price: ₹21,800</strong></div>
+  </div>
+
+  <div class="market-item">
+    <img src="{{ url_for('static', filename='images/sprayer.png') }}" alt="Sprayer">
+    <div class="market-name">Battery Operated Spray Tank</div>
+    <div class="market-price"><strong>Price: ₹2,989</strong></div>
+  </div>
+
+  <div class="market-item">
+    <img src="{{ url_for('static', filename='images/ricemill.png') }}" alt="Rice Mill">
+    <div class="market-name">Rice Mill with Motor (Grain Miller)</div>
+    <div class="market-price"><strong>Price: ₹31,800</strong></div>
+  </div>
+
+  <div class="market-item">
+    <img src="{{ url_for('static', filename='images/Seedermulti.png') }}" alt="Seeder">
+    <div class="market-name">Hand Push Plant Seeder and Fertilizer</div>
+    <div class="market-price"><strong>Price: ₹8,880</strong></div>
+  </div>
+
+  <div class="market-item">
+    <img src="{{ url_for('static', filename='images/smalltractor.png') }}" alt="Tiller">
+    <div class="market-name">Mega Power Tiller</div>
+    <div class="market-price"><strong>Price: ₹52,800</strong></div>
+  </div>
+
+  <div class="market-item">
+    <img src="{{ url_for('static', filename='images/cultivator4stroke.png') }}" alt="Cultivator">
+    <div class="market-name">4-Stroke Cultivator</div>
+    <div class="market-price"><strong>Price: ₹33,800</strong></div>
+  </div>
+
+</div>
+{% endblock %}

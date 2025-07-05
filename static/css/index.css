@@ -1,0 +1,221 @@
+/* Global Styles */
+body {
+    background-image: url('bgi.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  /* Header */
+  .heading {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(10deg, rgb(154, 234, 108), rgb(255, 255, 255));
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    border-radius: 20%;
+    margin: 5px;
+  }
+  
+  .logo {
+    background-color: white;
+    padding: 4px;
+  }
+  
+  .headline {
+    font-size: 2rem;
+    flex-grow: 1;
+    padding-left: 4vw;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .login {
+    margin-right: 6vw;
+    background-color: rgb(107, 220, 51);
+    border: 2px double rgb(20, 151, 17);
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 6px 10px;
+    text-align: center;
+    transition: scale 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .login a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .login:hover {
+    scale: 1.2;
+  }
+  
+  .login:active {
+    scale: 0.95;
+  }
+  
+  .login a:hover {
+    color: rgb(245, 238, 226);
+  }
+  
+  /* Navigation */
+  .pagesfull {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .pagenames,
+  .pagedrop {
+    scale: 1;
+    transition: scale 0.2s ease;
+  }
+  
+  .pagenames a,
+  .pagedrop a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .pagenames:hover,
+  .pagedrop:hover {
+    scale: 1.2;
+  }
+  
+  .pagenames a:hover,
+  .pagedrop a:hover {
+    color: #f0e68c;
+  }
+  
+  .toggle_btn {
+    color: black;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* Dropdown menu for small screens */
+  .dropdown_menu {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+  }
+  
+  .dropdown_menu.open {
+    height: auto;
+    padding: 10px 0;
+  }
+  
+  .pagedrop {
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem;
+  }
+  
+  /* Banner */
+  .banner_w3lspvt {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-wh {
+    color: white;
+  }
+  
+  .text-li {
+    color: #eee;
+  }
+  
+  /* About Us Section */
+  .core-value {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    color: white;
+  }
+  
+  .core-right h3 {
+    font-size: 1.5rem;
+  }
+  
+  .core-right p {
+    font-size: 1rem;
+  }
+  
+  /* Services Section */
+  .blog-info {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blog-info:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .blog h4 {
+    font-weight: bold;
+  }
+  
+  /* Google Translate Customization */
+  .goog-logo-link {
+    display: none !important;
+  }
+  
+  .goog-te-gadget {
+    color: transparent !important;
+  }
+  
+  #google_translate_element select {
+    background-color: #f6edfd;
+    color: #0a0a0b;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 8px;
+  }
+  
+  .VIpgJd-ZVi9od-l4eHX-hSRGPd img {
+    display: none !important;
+  }
+  
+  .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none !important;
+  }
+  
+  .goog-te-banner-frame {
+    display: none !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1058px) {
+    .pagesfull .pagenames {
+      display: none;
+    }
+  
+    .toggle_btn {
+      display: block;
+    }
+  
+    .dropdown_menu {
+      display: block;
+    }
+  }
+  
+
