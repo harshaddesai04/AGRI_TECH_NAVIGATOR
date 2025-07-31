@@ -1,112 +1,84 @@
-# AGRI_TECH_NAVIGATOR
-### Farmer Friendly website provide all information to the farmer in local language also AI integreted ferure like crop recommendation, Fertilizer suggestion and plant disease identifier.
-## Author - HARSHAD PRASHANT DESAI
+# 🌾 Agri Tech Navigator – Empowering Farmers with ML & DL 🚜
 
-
-# 🌿 Agri-Tech-Navigator - Precision Farming with ML & DL
-
-A simple Machine Learning and Deep Learning-based web application that helps farmers with:
+A multilingual, intelligent agriculture assistant using **Machine Learning** and **Deep Learning**, enabling:
 - ✅ **Crop Recommendation**
 - ✅ **Fertilizer Suggestion**
 - ✅ **Plant Disease Detection**
+- ✅ **Government Scheme Guidance**
+- ✅ **Modern Farming Technique Insights**
+- ✅ **Marketplace Info** – for price insights
 
-> 📺 **Featured on Krish Naik’s YouTube Channel**  
-> 🔗 [Watch it here](#) *(Insert link if available)*
+🌐 **Live App:** [agri-tech-navigator.onrender.com](https://agri-tech-navigator.onrender.com)  
+💻 **GitHub Repo:** [github.com/harshaddesai04/AGRI_TECH_NAVIGATOR](https://github.com/harshaddesai04/AGRI_TECH_NAVIGATOR)
 
 ---
 
 ## ⚠️ Disclaimer
-This is a **Proof of Concept (POC)** project.  
-The datasets used here are limited and may not reflect real-world conditions.  
-**Please do not make critical farming decisions based on this tool.**  
-However, this project showcases how ML/DL can be integrated into **precision agriculture** when developed at scale using authentic and verified data.
+
+This is a **Proof of Concept (POC)** built for educational and demonstration purposes.  
+The recommendations and data may not cover all agricultural conditions.  
+Do not use this as the sole decision-making tool for critical farming activities.
 
 ---
 
-## 💡 Motivation
+## 🎯 Key Features
 
-Agriculture plays a crucial role in the economic development of countries like **India**, where a large part of the population depends on farming.
+### 🥦 Crop Recommendation  
+- **Inputs:** Soil **NPK**, **pH**, **Rainfall**, **Location** (State & City)  
+- **Model:** Trained using Random Forest (Scikit-learn)  
+- **Output:** Best crop suitable for the current condition  
+- **Weather Integration:** Fetches temperature and humidity using Weather API  
 
-With advancements in **Machine Learning (ML)** and **Deep Learning (DL)**, it's now possible to enhance productivity, reduce manual effort, and optimize farming practices.
+### 🌱 Fertilizer Suggestion  
+- **Inputs:** NPK levels and **Target Crop**  
+- **Logic:** Rule-based approach based on nutrient balance  
+- **Output:** Suggests which nutrient is lacking or excessive and recommends a fertilizer
 
-**Harvestify** is a project designed with three core features:
+### 🍃 Plant Disease Detection  
+- **Input:** Upload an image of a leaf  
+- **Model:** PyTorch CNN trained on the PlantVillage dataset  
+- **Output:** Detects disease (if any) and provides cure or suggestion
 
-1. **Crop Recommendation** – Predict the most suitable crop based on soil nutrients and weather.
-2. **Fertilizer Suggestion** – Suggest the right fertilizer based on nutrient balance and crop.
-3. **Plant Disease Detection** – Detect plant diseases through leaf images and suggest cures.
+### 📜 Government Schemes  
+- Provides central and **state-specific schemes** useful to farmers  
+- There are different schemes from various departments, and information is scattered across documents and websites.  
+- I collected all the key scheme-related documents and website links into **a single, organized page** for farmer convenience.
 
----
+### 🚜 Modern Farming Techniques  
+- Explains technologies like **Hydroponics**, **Aeroponics**, **Hybrid Seeds**, etc.  
 
-## 📊 Datasets Used
-
-- **Crop Recommendation:** Custom-built dataset
-- **Fertilizer Suggestion:** Custom-built dataset
-- **Plant Disease Detection:** PlantVillage dataset
-
----
-
-## 📓 Notebooks
-
-Check the training and preprocessing code on Kaggle:
-
-- [Crop Recommendation Notebook](#)
-- [Disease Detection Notebook](#)
-
----
-
-## 🛠️ Built With
-
-- Python
-- Flask
-- Scikit-learn
-- TensorFlow / PyTorch
-- OpenCV
-- HTML, CSS, JavaScript (for frontend)
-- Weather API (for temperature/humidity based on location)
+### 🌍 Multilingual Support  
+- Integrated with **Google Translate dropdown**  
+- Allows farmers to view the site in **multiple Indian languages**
 
 ---
 
-## 🚀 Deployment
+## 📊 Tech Stack
 
-- **Hosted on:** [Heroku](#) *(Insert live URL here)*  
-  _Note: App may take a minute to load due to free-tier hibernation._
-
----
-
-## 💻 How to Use
-
-### 🥦 Crop Recommendation System
-- Input soil **N-P-K** values (Nitrogen, Phosphorous, Potassium), **state**, and **city**.
-- System fetches temperature and humidity via weather API.
-- Returns the best crop to grow.
-
-> ℹ️ N-P-K values should represent the ratio, not absolute values.  
-> Avoid using names of remote towns, stick to major cities for accuracy.
+| Layer       | Technologies                          |
+|-------------|----------------------------------------|
+| Backend     | Flask, Python                          |
+| ML/DL       | Scikit-learn, PyTorch, Pandas, NumPy   |
+| Frontend    | HTML, CSS, Bootstrap, JavaScript       |
+| Image Tools | OpenCV, PIL                            |
+| API         | Weather API (OpenWeatherMap), Google Translate API |
+| Deployment  | Render.com                             |
 
 ---
 
-### 🌱 Fertilizer Suggestion System
-- Enter N-P-K values of your soil and the crop name.
-- The model tells if any nutrient is in excess or deficient.
-- Suggests appropriate fertilizers.
+## 📦 Project Structure
 
----
-
-### 🍃 Plant Disease Detection
-- Upload an image of a **plant leaf**.
-- The model detects whether it’s **healthy** or **diseased**.
-- If diseased, it shows the cause and suggested cure.
-
-> 🌾 Currently supports specific crops only.
-
----
-
-## 🧑‍💻 Local Setup
-
-Make sure `git` and `Anaconda`/`Miniconda` are installed.
-
-### Clone the repository:
-
-```bash
-git clone -b deploy https://github.com/Gladiator07/Harvestify.git
-cd Harvestify
+```plaintext
+AGRI_TECH_NAVIGATOR/
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── city/
+│
+├── templates/
+│
+├── model/
+│
+├── utils/
