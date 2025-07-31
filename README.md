@@ -92,8 +92,8 @@ cd AGRI_TECH_NAVIGATOR```
 ```
 ### 2. 🐍 Create a virtual environment 
 ```bash
-python -m venv harshad
-harshad\Scripts\activate```
+conda create -n harshad
+conda activate harshad
 ```
 ### 3. 📦 Install dependencies
 ```bash
