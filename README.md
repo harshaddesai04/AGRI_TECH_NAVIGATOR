@@ -81,32 +81,32 @@ AGRI_TECH_NAVIGATOR/
 │
 ├── model/
 │
-├── utils/```
-
+├── utils/
+`````
 ## 🚀 How to Run Agri Tech Navigator Locally
 
 ### 1. 📂 Clone the repository
 ```bash
 git clone https://github.com/harshaddesai04/AGRI_TECH_NAVIGATOR.git
 cd AGRI_TECH_NAVIGATOR```
-
+```
 ### 2. 🐍 Create a virtual environment 
 ```bash
 python -m venv harshad
 harshad\Scripts\activate```
-
+```
 ### 3. 📦 Install dependencies
 ```bash
-pip install -r requirements.txt```
-
+pip install -r requirements.txt
+```
 ### 4. ▶️ Run the Flask application
 ```bash
-python app.py```
-
+python app.py
+```
 ### 5. 🌐 Open your browser and visit
 ```bash
-http://127.0.0.1:5000```
-
+http://127.0.0.1:5000
+```
 ## 📞 Contact
 💼 **LinkedIn:** [https://www.linkedin.com/in/Harshad-Desai/](https://www.linkedin.com/in/Harshad-Desai/)
 
