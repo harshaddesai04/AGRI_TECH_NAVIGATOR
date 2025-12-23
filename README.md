@@ -101,22 +101,42 @@ Do not use this as the sole decision-making tool for critical farming activities
 
 ```plaintext
 AGRI_TECH_NAVIGATOR/
+AGRI_TECH_NAVIGATOR/
 │
 ├── static/
 │   ├── css/
-│   ├── js/
+│   ├── scripts/
 │   ├── images/
-│   └── city/
+│   
 │
 ├── templates/
-│   ├──
+│   ├── index.html
+│   ├── layout.html
+│   ├── crop.html
+│   ├── crop-result.html
+│   ├── disease.html
+│   ├── disease-result.html
+│   ├── fertilizer.html
+│   ├── fertilizer-result.html
+│   ├── marketplace.html
+│   ├── modernfarming.html
+│   ├── try_again.html
+│   ├── new.html
+│   ├── sample.html
+│   └── yojnas.html
 │
 ├── model/
-│   ├──RandomForest.pkl
-│   ├──plant_disease_model.pth
-│    
+│   ├── RandomForest.pkl
+│   └── plant_disease_model.pth
 │
 ├── utils/
+│   ├── disease.py
+│   ├── fertilizer.py
+│   └── model.py
+│
+├── app.py
+└── requirements.txt
+
 `````
 ## 🚀 How to Run Agri Tech Navigator Locally
 
