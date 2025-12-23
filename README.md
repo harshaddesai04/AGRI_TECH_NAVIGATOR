@@ -10,6 +10,9 @@ A multilingual, intelligent agriculture assistant using **Machine Learning** and
 
 🌐 **Live App:** [agri-tech-navigator.onrender.com](https://agri-tech-navigator.onrender.com)  
 💻 **GitHub Repo:** [github.com/harshaddesai04/AGRI_TECH_NAVIGATOR](https://github.com/harshaddesai04/AGRI_TECH_NAVIGATOR)
+    **Disease Detection DataSet** [Disease Detection Dataset on Kaggle](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset)
+    **Fertilizer Dataset**[Fertilizer_Dataset](https://github.com/harshaddesai04/AGRI_TECH_NAVIGATOR/blob/main/Data/fertilizer.csv)
+    **Crop Recommendation Dataset**[Crop Recommendation](https://github.com/harshaddesai04/AGRI_TECH_NAVIGATOR/blob/main/Data/crop_recommendation.csv)
 
 ---
 
