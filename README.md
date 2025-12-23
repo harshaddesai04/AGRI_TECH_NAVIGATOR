@@ -109,8 +109,12 @@ AGRI_TECH_NAVIGATOR/
 │   └── city/
 │
 ├── templates/
+│   ├──
 │
 ├── model/
+│   ├──RandomForest.pkl
+│   ├──plant_disease_model.pth
+│    
 │
 ├── utils/
 `````
