@@ -91,7 +91,7 @@ Do not use this as the sole decision-making tool for critical farming activities
 | Backend     | Flask, Python                          |
 | ML/DL       | Scikit-learn, PyTorch, Pandas, NumPy   |
 | Frontend    | HTML, CSS, Bootstrap, JavaScript       |
-| Image Tools | OpenCV, PIL                            |
+| Image Tools | ResNet, PIL                            |
 | API         | Weather API (OpenWeatherMap), Google Translate API |
 | Deployment  | Render.com                             |
 
